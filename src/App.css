@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --appBg: rgb(221, 220, 220);
+  --mainBg: white;
+  --bigFont: 15px;
+  --smallFont: 10px;
+}
+.App {
+  background-color: var(--appBg);
+  width: 100%;
+  height: 100vh;
+  padding: 3%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainBg);
+  display: flex;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}

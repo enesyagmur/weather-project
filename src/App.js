@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
+import City from "./components/city";
+import World from "./components/world";
+import Detailcity from "./components/detailCity";
 import "./App.css";
 
 import axios from "axios";
 
 function App() {
-  const [data, setData] = useState([]);
+  /* const [data, setData] = useState([]);
 
   useEffect(() => {
     const url = "https://api.openweathermap.org/data/2.5/";
@@ -17,8 +20,18 @@ function App() {
     };
     fetchData();
   }, []);
-  console.log(data);
-  return <div className="App"></div>;
+  console.log(data);*/
+  return (
+    <div className="App">
+      <div className="main">
+        <City />
+        <div>
+          <World />
+          <Detailcity />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
